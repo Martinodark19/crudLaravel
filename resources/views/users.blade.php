@@ -116,12 +116,12 @@
                   }
                   else
                   {
-                    console.log("paso por el else y error wn")
+                    
                     alert(response.error)
                   }
                 },
                 error: function(xhr){
-                  console.log("errownn")
+                  console.log("error",xhr)
                 }
             })
             
