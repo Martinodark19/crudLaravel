@@ -102,12 +102,10 @@
                 {               
                     if(response.success)
                     {
-                        console.log("esta funcionando bien")
                         $('#div-to-show').show()
                     }
                     else
                     {
-                        console.log("no funciono")
                         $('#div-to-show').hide()
                     }
                             
@@ -146,6 +144,9 @@
                         $('#rutDiv').text('')
                         $('#emailDiv').text('')
                         alert("datos enviados correctamente")
+                        location.reload()
+
+
                     }
                     
                     

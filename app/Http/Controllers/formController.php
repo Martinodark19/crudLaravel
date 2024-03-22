@@ -70,13 +70,11 @@ class formController extends Controller
             {
                $this->dataError['rutInvalido'] = response()->json(['error' => 'El RUT es inválido.']);
             }
-                dd($this->dataForm['rut']);
                // validacion de email
             
             $apiKeyEmail = env('APIKEY_EMAIL');
             $url = Http::get("https://api.debounce.io/v1/?api=$apiKeyEmail&email=".$this->dataForm['email']);
-
-            dd($url->json());
+            
             if($url->status() == 200)
             {
                     
